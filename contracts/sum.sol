@@ -3,18 +3,28 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Sum{
-    uint value;
+    int value=0;
     uint nextValue;
+    address owner;
 
-    constructor(uint _initialValue){
-        value = _initialValue;
+    constructor(){
+        owner = msg.sender;
     }
 
-    function add(uint _addValue) public  {
+    modifier onlyOwner{
+        require(owner == msg.sender, "Owner funciton");
+        _;
+    }
+
+    function add(int _addValue) public onlyOwner {
         value += _addValue;
     }
 
-    function getValue() public view returns (uint) {
+    function subtract(int _subValue) public onlyOwner  {
+        value -= _subValue;
+    }
+
+    function getValue() public view returns (int) {
         return value;
     }
 }
