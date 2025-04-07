@@ -13,6 +13,24 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "allowanceCreation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
@@ -114,11 +132,11 @@
 	},
 	"sources": {
 		"contracts/Week17-ERC20.sol": {
-			"keccak256": "0x834830ce0ac1299fb8a2a591bca3e04674a8b6c424cfc99ada8f9d2c3b9d80a2",
+			"keccak256": "0xf316ebb3858e086f9818a9ace198f7dcb6a9aba0700a7988643f2d8be616b1a4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://62cb527113f0fc063d318da6bc530a58da51ca4c1db30f40a4cde84694e1038a",
-				"dweb:/ipfs/QmcSYoCuhbTUhMcp5CK2VjU5UJKsoqMoABpCuM7FaLTK1z"
+				"bzz-raw://61f398569670873097a1ae812ff6259301068ed4377249eeb779e6e63699604c",
+				"dweb:/ipfs/QmbJcv4tTusf2tcZJUngqYMnwCG8rKtjN2ehketm9Kk1My"
 			]
 		}
 	},
