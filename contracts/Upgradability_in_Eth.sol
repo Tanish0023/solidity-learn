@@ -20,10 +20,18 @@ contract Storage{
 
 }
 
-contract Implementation{
+contract Implementation1{
     uint public num;
 
     function setNum(uint256 _num) public {
         num = _num;
+    }
+}
+
+contract Implementation2{
+    uint public num;
+
+    function setNum(uint256 _num) public {
+        num = 2 * _num;
     }
 }
