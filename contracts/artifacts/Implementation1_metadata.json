@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "setNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Upgradability_in_Eth.sol": "Implementation1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Upgradability_in_Eth.sol": {
+			"keccak256": "0x13b5c23e1d23fdff30420ecf123e00f06cff3bf7e113641cc0bd06806a722c86",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://91c3ea4857bcaec7b0eff4470f920aafc8cd0dc4591188f88a06746f8cb57ff4",
+				"dweb:/ipfs/QmRLBkMEEWjVwZrUGFgJpTXRvZB2KkGkx2jJfsMLByLQSz"
+			]
+		}
+	},
+	"version": 1
+}
