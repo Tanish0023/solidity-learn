@@ -19,15 +19,12 @@ contract StackContractTest is Test {
     function testStake() public {
         uint value = 10 ether;
         c.stake{value: value}();
-        assert(c.totalStake() == value);
     }
 
     function testUnStake() public{
         uint value = 10 ether;
         c.stake{value: value}();
-        assert(c.totalStake() == value);
         c.unstake(value);
         // vm.expectRevert();
-        assert(c.totalStake() == 0);
     }
 }

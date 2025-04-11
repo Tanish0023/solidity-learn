@@ -1,3 +1,5 @@
+// OLD METHOD
+
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.13;
 
@@ -50,10 +52,10 @@ contract StakingContract {
     }
 
     function claimRewards() public {
-        uint256 currentReward = unclaimedReward[msg.sender];
-        uint256 lastUpdated = lastUpdatedTime[msg.sender];
-        uint256 newReward = (block.timestamp - lastUpdated) *
-            balanceOf(msg.sender);
+        // uint256 currentReward = unclaimedReward[msg.sender];
+        // uint256 lastUpdated = lastUpdatedTime[msg.sender];
+        // uint256 newReward = (block.timestamp - lastUpdated) *
+        //     balanceOf(msg.sender);
 
         // Transfering Now
 
