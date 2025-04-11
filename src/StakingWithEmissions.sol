@@ -6,9 +6,9 @@ interface IOrchaCoin {
 }
 
 contract StakingWithEmissions{
-    address owner;
-    IOrchaCoin tokenContractAddress;
-    uint totalStake;
+    address private owner;
+    IOrchaCoin private tokenContractAddress;
+    uint public totalStake;
 
     uint256 public constant REWARD_PER_SEC_PER_ETH = 1;
 
